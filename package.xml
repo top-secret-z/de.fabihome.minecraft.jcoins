@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.fabihome.minecraft.jcoins" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
-	<packageinformation>
-		<packagename>Minecraft: JCoins extension</packagename>
-		<packagedescription>JCoins award after verification</packagedescription>
-		<packagename language="de">Minecraft: JCoins Erweiterung</packagename>
-		<packagedescription language="de">JCoins Vergabe nach Verifizierung</packagedescription>
-		<version>2.1.0</version>
-		<date>2021-06-05</date>
-	</packageinformation>
-	
-	<authorinformation>
-		<author>Fabihome (Fabi_995)</author>
-		<authorurl>https://fabihome.de</authorurl>
-	</authorinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="3.1.0">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="3.1.0">de.wcflabs.wcf.jcoins</requiredpackage>
-		<requiredpackage minversion="2.1.0">de.fabihome.minecraft</requiredpackage>
-	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
-		
-	<instructions type="install">
-		<!-- files_shop -->
-		<instruction type="file"/>
+<package name="de.softcreatr.minecraft.jcoins" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
+    <packageinformation>
+        <packagename>Minecraft: JCoins extension</packagename>
+        <packagedescription>JCoins award after verification</packagedescription>
+        <packagename language="de">Minecraft: JCoins Erweiterung</packagename>
+        <packagedescription language="de">JCoins Vergabe nach Verifizierung</packagedescription>
+        <version>2.1.1</version>
+        <date>2022-09-19</date>
+    <license><![CDATA[LGPL <https://opensource.org/licenses/lgpl-license.php>]]></license>
+    </packageinformation>
 
-		<!-- xml -->
-		<instruction type="eventListener" />
-		<instruction type="objectType" />
+    <authorinformation>
+        <author><![CDATA[SoftCreatR.dev]]></author>
+        <authorurl><![CDATA[https://softcreatr.dev]]></authorurl>
+    </authorinformation>
 
-		<!-- language -->
-		<instruction type="language"/>
-	</instructions>
+    <requiredpackages>
+        <requiredpackage minversion="3.1.0">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="3.1.0">de.softcreatr.wcf.jcoins</requiredpackage>
+        <requiredpackage minversion="2.1.0">de.fabihome.minecraft</requiredpackage>
+    </requiredpackages>
+
+    <excludedpackages>
+        <excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="*">de.fabihome.minecraft.jcoins</excludedpackage>
+    </excludedpackages>
+
+    <instructions type="install">
+        <instruction type="file" />
+        <instruction type="eventListener" />
+        <instruction type="objectType" />
+        <instruction type="language"/>
+    </instructions>
+
+    <instructions type="update" fromversion="2.1.0">
+        <instruction type="file" />
+        <instruction type="eventListener" />
+        <instruction type="objectType" />
+        <instruction type="language"/>
+    </instructions>
 </package>
