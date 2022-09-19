@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/objectType.xsd">
+	<import>
+		<type>
+			<name>de.fabihome.minecraft.jcoins.verify</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>50</defaultAmount>
+			<category>de.fabihome.minecraft</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+		</type>
+
+		<type>
+			<name>de.fabihome.minecraft.jcoins.verify</name>
+			<definitionname>com.woltlab.wcf.rebuildData</definitionname>
+			<classname>wcf\system\worker\JCoinsMinecraftVerifyRebuildDataWorker</classname>
+		</type>
+	</import>
+</data>

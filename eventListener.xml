@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<eventlistener name="jCoinsMinecraftVerifyUser">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsMinecraftVerifyListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

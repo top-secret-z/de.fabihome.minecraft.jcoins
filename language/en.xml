@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en" languagename="English">
+	<category name="wcf.jcoins.statement">
+		<item name="wcf.jcoins.statement.category.de.fabihome.minecraft"><![CDATA[Minecraft]]></item>
+		<item name="wcf.jcoins.statement.title.de.fabihome.minecraft.jcoins.verify"><![CDATA[Verified with Minecraft]]></item>
+		<item name="wcf.jcoins.statement.reason.de.fabihome.minecraft.jcoins.verify"><![CDATA[You have verified yourself with your Minecraft account.]]></item>
+	</category>
+
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.de.fabihome.minecraft.jcoins.verify"><![CDATA[Update Minecraft verification]]></item>
+		<item name="wcf.acp.rebuildData.de.fabihome.minecraft.jcoins.verify.description"><![CDATA[Update JCoins for Minecraft verification]]></item>
+	</category>
+</language>
